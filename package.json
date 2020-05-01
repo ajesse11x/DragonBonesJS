@@ -33,6 +33,12 @@
     "del": "^3.0.0",
     "download": "^6.2.5",
     "semver": "^5.4.1",
-    "debug": "^3.1.0"
-  }
+    "debug": "^3.1.0",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
